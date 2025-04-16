@@ -18,7 +18,7 @@ In this case, we simulate a real-world situation where a **legacy color system**
 ```text
 adapter/
 ├── adapter/
-│   └── PrimaryColorAdapter.java
+│   └── ColorAdapter.java
 ├── legacy/
 │   └── LegacyPalette.java
 ├── modern/
@@ -43,7 +43,7 @@ This pattern is useful when:
 
 - `LegacyPalette` is an old class with specific color methods (`getPrimary()`, etc.)
 - `ColorToken` is the new standard interface
-- `PrimaryColorAdapter` implements `ColorToken` and internally uses a `LegacyPalette` instance to provide compatibility
+- `ColorAdapter` implements `ColorToken` and internally uses a `LegacyPalette` instance to provide compatibility
 
 ---
 
